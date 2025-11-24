@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+/* 1. DEFINE CORE COLOR VALUES IN :ROOT (FORCED DEFAULT DARK THEME) */
+:root {
+  /* Primary/Accent Colors (Red equivalents) */
+  --color-brand-primary-base: #7c2563;       /* Red 500 */
+  --color-brand-primary-dark: #957DAD;       /* Red 600 (Used for most buttons) */
+
+  /* Application Palette */
+  --color-bg-base: #e9dae9;             /* Background (Near Black / Gray-950) */
+  --color-text-base: #2C3E50;           /* Foreground/Text (Gray-200) */
+  --color-card-background-base: #f4f2f6;    /* Gray-800 - For Cards/Panels */
+  --color-accent-background-base: #E0BBE4;  /* Gray-700 - For Buttons/Tags Base */
+  --color-text-secondary: #141515;      /* Secondary Text (Gray-400) */
+  --color-high-contrast-text: #000000;  /* White Text */
+  --color-border-secondary: #b09bb7;    /* Secondary Border (Gray-700) */
+  
+  /* Interaction States */
+  --color-primary-hover-value: #c69aba;       /* Darker Red (Red-700) */
+  /* The dark app background is used for secondary button hover (guarantees contrast) */
+  --color-accent-hover-value: var(--color-bg-base); 
+}
+
+/* 2. DEFINE THEME UTILITIES using @theme */
+@theme {
+  --color-*: initial; 
+  
+  /* Primary Brand Colors */
+  --color-primary: var(--color-brand-primary-base); 
+  --color-primary-dark: var(--color-brand-primary-dark); 
+  
+  /* Interaction States */
+  --color-primary-hover: var(--color-primary-hover-value);
+  --color-accent-hover: var(--color-accent-hover-value); /* New, clear hover utility */
+
+  /* Application Background/Text Palette */
+  --color-app-background: var(--color-bg-base); 
+  --color-app-text: var(--color-text-base); 
+  
+  --color-card-background: var(--color-card-background-base); /* Used on all main cards */
+  --color-accent-background: var(--color-accent-background-base); /* Used on tags and secondary buttons (base color) */
+  
+  --color-secondary-text: var(--color-text-secondary);
+  --color-high-contrast-text: var(--color-high-contrast-text);
+  --color-border-secondary: var(--color-border-secondary);
+
+  /* Font Namespace */
+  --font-inter: Inter, sans-serif;
+  --font-sans: var(--font-inter); 
+  --font-heading: var(--font-emilys-candy);
+}
+
+/* 3. Global Heading Application */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading) !important;
+  /* !important used here to ensure the custom CSS variable overrides any default 
+  font-family set by Tailwind's base styles */
+}
+
+/* 4. Special Effects */
+@layer components {
+/* 🛑 NEW: Custom Hover Logic for SVG Fill 🛑 */
+  .svg-wobbly-fill {
+    /* Ensure the color change is smooth */
+    transition: fill 300ms ease; 
+  }
+
+  /* Target the SVG fill path when its parent div (the group) is hovered */
+  .group:hover .svg-wobbly-fill {
+    /* Use the theme variable for the desired hover color */
+    fill: var(--color-accent-background-base); 
+  } 
+}
+
+/* CRITICAL FIX: Forced Margin Reset */
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden; 
+}

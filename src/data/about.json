@@ -1,0 +1,51 @@
+{
+  "header": {
+    "title": "About Kaylee Ulep",
+    "subtitle": "Cornell Computer Science Student | Building with Integrity and Imagination"
+  },
+  "intro": {
+    "quote": "As a Computer Science student at Cornell, I believe the most impactful technology is built with creativity and integrity. I approach engineering with a <span class='font-bold'>user-first mindset</span>, blending analytical skills with imagination to solve real problems.",
+    "mission": "To build with integrity and imagination to create meaningful impact.",
+    "vision": "To develop practical, user-driven technology that solves real-world challenges and adds tangible value."
+  },
+  "aiPhilosophy": [
+    "I embrace artificial intelligence tools to enhance my productivity and accelerate learning, always grounding my work in <span class='font-bold'>integrity, critical thinking, and ownership.</span> I view AI as a powerful co-pilot, not an autonomous replacement for human judgment.",
+    "My core commitment is to the quality and authenticity of the final product. Every line of code, design choice, and written statement is ultimately <span class='font-bold'>owned, reviewed, and validated by me.</span> Leveraging AI to misrepresent my capabilities or experiences is fundamentally opposed to my guiding principles."
+  ],
+  "principles": [
+    {"term": "Integrity", "definition": "I build ethically and communicate transparently."},
+    {"term": "Reliability", "definition": "I deliver solutions people can trust."},
+    {"term": "Persistence", "definition": "I am committed to solving hard problems."},
+    {"term": "Ownership", "definition": "I see projects through to impact."},
+    {"term": "Purpose", "definition": "I build what matters, not just what works."},
+    {"term": "Communication", "definition": "I prioritize clear and respectful communication."}
+  ],
+  "evidence": {
+    "story": [
+      "My user-focused approach is best demonstrated by <span class='font-bold'>SkySong</span>, a web application that began as a solution for a real need I identified as a musician. I designed and built an interactive sheet music and audio playback app, making it easier for users to learn harmonies and sing with confidence.",
+      "I reduced chorus members' individual part learning time by <span class='font-bold'>80%</span> after implementing beta-testing feedback from over 20 users, validating the product's high user impact. I took <span class='font-bold'>full ownership</span> of the entire product lifecycle, maintaining the platform, addressing bugs, and prioritizing enhancement requests.",
+      "My roadmap (including features like copyright protection) reflects my commitment to building ethically and anticipating future user needs. This project reinforced my belief that impactful software is born from <span class='font-bold'>persistence, empathy, and a creative spark.</span>"
+    ],
+    "technicalSkills": {
+      "skills": [
+        {"area": "Languages", "list": "JavaScript (React, Next.js) , Python , Java , C++ , TypeScript , Swift."},
+        {"area": "Web / Databases", "list": "HTML , CSS , Tailwind , MySQL , PostgreSQL , PlanetScale , Supabase."},
+        {"area": "Tools & Practices", "list": "GitHub , VS Code , Xcode , Vercel , Agile Development , Version Control (Git)."}
+      ],
+      "explorationAreas": [
+        {
+          "title": "iOS Development (Swift)",
+          "description": "I am currently developing a native iOS application using Swift, focusing on a polished user experience."
+        },
+        {
+          "title": "AI/ML",
+          "description": "I recognize the critical role of Artificial Intelligence and Machine Learning in future technology. I plan to begin coursework and hands-on projects soon to integrate these advanced skills into my development portfolio."
+        }
+      ]
+    }
+  },
+  "callToAction": {
+    "message": "Actively seeking Summer 2026 internship opportunities.",
+    "subtext": "Let's connect to discuss how I can contribute to your team."
+  }
+}

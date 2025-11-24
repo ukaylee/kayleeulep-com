@@ -1,0 +1,23 @@
+{
+  "siteMetadata": {
+    "website": "KayleeUlep.com",
+    "fullName": "Hi, I'm Kaylee Ulep!",
+    "titlePosition": "SOFTWARE ENGINEERING INTERN | CORNELL UNIVERSITY",
+    "brandStatement": "Building high-impact software with technical integrity, creative imagination, and a user-first focus.",
+    "copyright": "©2025-2026 Kaylee Ulep",
+    "resumePdfPath": "/documents/Kaylee_Ulep_Resume.pdf",
+    "resumeDownloadName": "Kaylee_Ulep_Resume.pdf",
+    "enableDatedResumeDownload": true
+  },
+  "contact": {  
+    "email": "hello@kayleeulep.com",
+    "linkedinUrl": "https://www.linkedin.com/in/kaylee-ulep/",
+    "githubUrl": "https://github.com/ukaylee"
+  },
+  "featuredLink": {
+    "name": "SkySong App Demo",
+    "icon": "FaMusic",
+    "href": "https://skysong.app/song/17",
+    "siteDisplay": "skysong.app"
+  }
+}

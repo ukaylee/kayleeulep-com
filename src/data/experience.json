@@ -1,0 +1,51 @@
+[
+  {
+    "year": "2025 – Present",
+    "title": "SkySong - Sheet Music Web Application",
+    "company": "Personal Project",
+    "description": "Designed and built an interactive sheet music library using React, Tailwind, and Supabase to address a common collaboration pain point. Beta-tested by 20+ choir members, the tool reduced individual part learning time by 80%. Includes a secure admin portal with role-based access control.",
+    "tags": ["React", "Tailwind CSS", "Supabase", "PostgreSQL", "Full-Stack", "UI/UX"]
+  },
+  {
+    "year": "2025 – Present",
+    "title": "Personal Portfolio",
+    "company": "Personal Project",
+    "description": "Architected and implemented a fully responsive, type-safe portfolio deployed on Vercel using the Next.js and Tailwind stack. Integrated custom features like a dynamic resume versioning hook and a configurable data structure to manage content flow.",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "CI/CD"]
+  },  
+  {
+    "year": "Dec 2024 – Present",
+    "title": "Founder & Leader, Pancit Kanta",
+    "company": "Cornell Filipino Association",
+    "description": "Initiated and founded Cornell's first Filipino a cappella group. Led 8+ members, arranged music, and secured performance opportunities. Demonstrated technical leadership by creating digital resources and part-specific recordings to accelerate team learning and performance synchronization.",
+    "tags": ["Leadership", "Music Arrangement", "Team Building", "Extracurricular"]
+  },
+  {
+    "year": "May 2025 – Aug 2025",
+    "title": "Exploratory Software Engineering Intern",
+    "company": "Lowe's Companies Inc.",
+    "description": "Supported maintenance of a large-scale React + MySQL platform serving over 2,000 internal users. Executed data integrity updates in the MySQL backend, ensuring high data accuracy. Led a collaborative effort among 8 interns to prepare the final project demo for management.",
+    "tags": ["React", "MySQL", "API Integration", "Agile Development", "Internship"]
+  },
+  {
+    "year": "2024 – Expected May 2028",
+    "title": "B.A. Computer Science (3.76 GPA)",
+    "company": "Cornell University, Arts & Sciences",
+    "description": "Relevant coursework includes Data Structures & Algorithms (Java), Object-Oriented Programming, C++ Programming, and iOS Development (Swift). **Foundational Database concepts were completed via dual credit (TMCC).** Focus on advanced computing principles planned for future terms.",
+    "tags": ["Java", "Python", "C++", "Swift", "Data Structures", "OOP", "Higher Education"]
+  },
+  {
+    "year": "2023 – 2024",
+    "title": "Technical Certifications & Achievements",
+    "company": "Recognition",
+    "description": "Achieved notable technical milestones, including being named a National Cyber Scholarship Program Finalist (2024) and completing the Cloud Platform Job Simulation (Verizon) (2024) and the Cybersecurity Job Simulation (Mastercard) (2024). Completed the Girls Who Code Summer Immersion Program (2023).",
+    "tags": ["Cybersecurity", "Cloud", "Girls Who Code", "Technical Achievement"]
+  },
+  {
+    "year": "2023 – 2024",
+    "title": "Battalion Executive Officer",
+    "company": "Galena JROTC",
+    "description": "Promoted to Executive Officer within nine months of joining the program, selected over officers with four years of tenure. Managed 10 staff officers and coordinated projects impacting 159 cadets. Secured $2,000 for the program through a video campaign and community engagement.",
+    "tags": ["Management", "Project Coordination", "Leadership", "Fundraising"]
+  }
+]

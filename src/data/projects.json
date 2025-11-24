@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "SkySong – Sheet Music Library & Rehearsal Player",
+    "description": "A full-featured, interactive sheet music library and rehearsal player. Designed and built using React/JavaScript, the tool demonstrated a product impact by reducing individual part learning time by 80% during beta testing. Includes a secure admin portal with role-based access control.",
+    "technologies": ["React", "Tailwind", "Supabase", "PostgreSQL", "OpenSheetMusicDisplay (OSMD)"],
+    "githubUrl": "https://github.com/ukaylee/skysong",
+    "liveUrl": "https://skysong.app",
+    "imageUrl": "/images/proj_skysong_demo.gif"
+  },
+  {
+    "id": 2,
+    "title": "Kaylee Ulep Professional Portfolio",
+    "description": "This dedicated portfolio was built with Next.js 14 (App Router) to ensure a fast, highly scannable experience for recruiters. Features clean, component-driven architecture, and a fully responsive, mobile-first design.",
+    "technologies": ["Next.js (App Router)", "TypeScript", "Tailwind CSS", "Vercel"],
+    "githubUrl": "https://github.com/ukaylee/kayleeulep-com",
+    "liveUrl": "https://kayleeulep.com",
+    "imageUrl": "/images/proj_personalwebsite.png"
+  }
+]
