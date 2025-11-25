@@ -5,6 +5,7 @@
 [![Technology Stack](https://img.shields.io/badge/Stack-Next.js%20%7C%20TS%20%7C%20Tailwind-red)](https://nextjs.org/)
 
 ## 🌐 Live Site
+
 **[kayleeulep.com](https://kayleeulep.com)** ---
 
 ## ✨ Overview
@@ -17,23 +18,23 @@ The goal was to build a modern application from the ground up to demonstrate pro
 
 This project was architected with a focus on maintainability, type-safety, and deployment automation:
 
-* **Type-Safe Development:** Built entirely with **TypeScript** to ensure code stability and catch errors during development rather than at runtime.
-* **Responsible AI Integration:** Developed in accordance with my **AI Integration Philosophy**, leveraging generative tools for efficient **debugging** and **boilerplate code generation** while maintaining full code ownership and rigorous manual review.
-* **CI/CD Pipeline (Vercel):** Utilizes **Vercel** for automated **Continuous Integration and Continuous Deployment**. Every merge to the main branch automatically triggers a build, test, and deployment to the production URL.
-* **Segregated Architecture for Maintainability:** Designed the application for maximum maintainability by segregating **code logic**, **content** (managed via dedicated **JSON data structures**), and **styling** (managed via Tailwind CSS) to simplify future updates and content management.
-* **Responsive Design:** Uses **Tailwind CSS** utility classes to ensure a pixel-perfect, mobile-first experience across all viewports.
+- **Type-Safe Development:** Built entirely with **TypeScript** to ensure code stability and catch errors during development rather than at runtime.
+- **Responsible AI Integration:** Developed in accordance with my **AI Integration Philosophy**, leveraging generative tools for efficient **debugging** and **boilerplate code generation** while maintaining full code ownership and rigorous manual review.
+- **Vercel Deployment:** Deployed the portfolio on **Vercel** for automated builds and hosting. Every push to the main branch triggers a new build and live update.
+- **Segregated Architecture for Maintainability:** Designed the application for maximum maintainability by segregating **code logic**, **content** (managed via dedicated **JSON data structures**), and **styling** (managed via Tailwind CSS) to simplify future updates and content management.
+- **Responsive Design:** Uses **Tailwind CSS** utility classes to ensure a pixel-perfect, mobile-first experience across all viewports.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Category | Technology | Purpose |
-| :--- | :--- | :--- |
-| **Framework** | **Next.js** (App Router) | React framework for production-ready, server-side rendered (SSR) applications. |
-| **Language** | **TypeScript** | JavaScript superset for compile-time type-checking and robust code quality. |
-| **Styling** | **Tailwind CSS** | Utility-first CSS framework for rapid and maintainable styling. |
-| **Deployment** | **Vercel** | Platform with integrated CI/CD for zero-configuration, instant deployment. |
-| **Version Control** | **Git / GitHub** | Source code management. |
+| Category            | Technology               | Purpose                                                                                         |
+| :------------------ | :----------------------- | :---------------------------------------------------------------------------------------------- |
+| **Framework**       | **Next.js** (App Router) | React framework for production-ready, server-side rendered (SSR) applications.                  |
+| **Language**        | **TypeScript**           | JavaScript superset for compile-time type-checking and robust code quality.                     |
+| **Styling**         | **Tailwind CSS**         | Utility-first CSS framework for rapid and maintainable styling.                                 |
+| **Deployment**      | **Vercel**               | Platform for automated builds and hosting; new pushes to the main branch trigger a live update. |
+| **Version Control** | **Git / GitHub**         | Source code management and version tracking.                                                    |
 
 ---
 
