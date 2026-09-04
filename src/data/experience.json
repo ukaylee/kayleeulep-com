@@ -1,9 +1,42 @@
 [
   {
+    "year": "Feb 2026 – Present",
+    "title": "iOS Developer",
+    "company": "Cornell Appdev",
+    "description": "Admitted to a highly selective project team developing production-level applications for 26k+ Cornell students. Maintain Resell, a production marketplace for Cornell, investigating user-facing issues app-wide and shipping Swift/SwiftUI updates across multiple workflows to enhance reliability. Review and debug team members' code, coordinating with backend and design ahead of major releases.",
+    "tags": ["Swift", "SwiftUI", "iOS", "Code Review", "Mobile Development"],
+    "imageUrl": "/images/experiences/cornell_appdev.png"
+  },
+  {
+    "year": "May 2026 – Jul 2026",
+    "title": "Tech Developer Intern",
+    "company": "Sponsors for Educational Opportunity (SEO)",
+    "description": "Led frontend development for MatchMission, a nonprofit platform and winner of SEO's Best Integration and Architecture Award. Engineered full-stack applications using Python (Flask), PostgreSQL, React, TypeScript, HTML/CSS, and REST APIs. Completed 300+ hours of intensive software engineering training focused on data structures, algorithms, and full-stack web development.",
+    "tags": [
+      "React",
+      "TypeScript",
+      "Flask",
+      "PostgreSQL",
+      "REST APIs",
+      "Internship"
+    ],
+    "imageUrl": "/images/experiences/seo.png"
+  },
+  {
+    "year": "Dec 2025",
+    "title": "Luminary — Best Overall Project Winner",
+    "company": "Cornell App Development Hack Challenge",
+    "description": "Architected focus timers and app lifecycle features in SwiftUI, implementing productivity workflows with visual progress rewards. Developed SwiftUI interfaces from designer mockups and collaborated with backend engineers to integrate APIs and support application features.",
+    "tags": ["Swift", "SwiftUI", "Alamofire", "Hackathon", "UI/UX"],
+    "videoUrl": "https://youtu.be/ZEVsYJFX-Fc",
+    "githubUrl": "https://github.com/typazo/luminary-frontend",
+    "imageUrl": "/images/projects/luminary.png"
+  },
+  {
     "year": "2025 – Present",
-    "title": "SkySong - Sheet Music Web Application",
+    "title": "SkySong - Sheet Music Library & Rehearsal Player",
     "company": "Personal Project",
-    "description": "Designed and built an interactive sheet music library using React, Tailwind, and Supabase to address a common collaboration pain point. Beta-tested by 20+ choir members, the tool reduced individual part learning time by 80%. Includes a secure admin portal with role-based access control.",
+    "description": "Designed and deployed a full-stack web app using React, PostgreSQL, and Supabase that streamlined harmony learning and reduced practice time by 80%. Implemented a secure admin portal with role-based access control (RBAC) to manage sheet music data and user permissions. Analyzed feedback from 20+ beta testers to iterate on application features and optimize the music-learning experience.",
     "tags": [
       "React",
       "Tailwind CSS",
@@ -11,45 +44,67 @@
       "PostgreSQL",
       "Full-Stack",
       "UI/UX"
-    ]
+    ],
+    "liveUrl": "https://skysong.app",
+    "githubUrl": "https://github.com/ukaylee/skysong",
+    "imageUrl": "/images/projects/skysong_demo.gif"
   },
   {
     "year": "2025 – Present",
     "title": "Personal Portfolio",
     "company": "Personal Project",
     "description": "Architected and implemented a fully responsive, type-safe portfolio deployed on Vercel using the Next.js and Tailwind stack. Integrated custom features like a dynamic resume versioning hook and a configurable data structure to manage content flow.",
-    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "UI/UX"]
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "UI/UX"],
+    "imageUrl": "/images/projects/personal_website.png"
+  },
+  {
+    "year": "May 2025 – Jun 2026",
+    "title": "Publicity Chair",
+    "company": "Cornell Filipino Association",
+    "description": "Managed CFA's social media presence, creating engaging announcements and graphics using Canva for Instagram and other platforms. Helped increase event visibility and member engagement through consistent and creative communication. Coordinated club merchandise, overseeing order processing, inventory, packaging, and distribution logistics to ensure accurate and timely fulfillment. As a member of the Executive Board, led on-site logistics at club events, greeting and directing attendees, coordinating setup and cleanup, and staffing promotional tabling to grow club visibility and membership.",
+    "tags": [
+      "Social Media",
+      "Canva",
+      "Marketing",
+      "Event Coordination",
+      "Executive Board",
+      "Extracurricular"
+    ],
+    "imageUrl": "/images/experiences/cornellfilipino_logo.jpeg"
+  },
+  {
+    "year": "May 2025 – Aug 2025",
+    "title": "Software Engineering Intern",
+    "company": "Lowe's Companies Inc.",
+    "description": "Led 8 interns in delivering a final presentation to senior leadership, synthesizing project insights and technical findings. Executed SQL queries across an internal React/MySQL platform used by 2,000+ employees to maintain accurate user-facing records. Collaborated in Agile sprints using Scrum and GitHub workflows to debug issues, implement updates, and support platform improvements.",
+    "tags": [
+      "React",
+      "MySQL",
+      "SQL",
+      "Agile Development",
+      "Scrum",
+      "Internship"
+    ],
+    "imageUrl": "/images/experiences/lowes.png"
   },
   {
     "year": "Dec 2024 – Present",
-    "title": "Founder & Leader, Pancit Kanta",
+    "title": "Founder & Leader, Salimbayan",
     "company": "Cornell Filipino Association",
-    "description": "Initiated and founded Cornell's first Filipino a cappella group. Led 8+ members, arranged music, and secured performance opportunities. Demonstrated technical leadership by creating digital resources and part-specific recordings to accelerate team learning and performance synchronization.",
+    "description": "Founder and leader of a Filipino singing group at Cornell, managing 8+ members in rehearsals and performances. Arranged music and created digital resources, including part-specific recordings, to accelerate learning and ensure synchronized, high-quality performances.",
     "tags": [
       "Leadership",
       "Music Arrangement",
       "Team Building",
       "Extracurricular"
-    ]
-  },
-  {
-    "year": "May 2025 – Aug 2025",
-    "title": "Exploratory Software Engineering Intern",
-    "company": "Lowe's Companies Inc.",
-    "description": "Supported maintenance of a large-scale React + MySQL platform serving over 2,000 internal users. Executed data integrity updates in the MySQL backend, ensuring high data accuracy. Led a collaborative effort among 8 interns to prepare the final project demo for management.",
-    "tags": [
-      "React",
-      "MySQL",
-      "API Integration",
-      "Agile Development",
-      "Internship"
-    ]
+    ],
+    "imageUrl": "/images/experiences/cornellfilipino_logo.jpeg"
   },
   {
     "year": "2024 – Expected May 2028",
-    "title": "B.A. Computer Science (3.76 GPA)",
-    "company": "Cornell University, Arts & Sciences",
-    "description": "Relevant coursework includes Data Structures & Algorithms (Java), Object-Oriented Programming, C++ Programming, and iOS Development (Swift). **Foundational Database concepts were completed via dual credit (TMCC).** Focus on advanced computing principles planned for future terms.",
+    "title": "B.A. Computer Science (3.723 GPA)",
+    "company": "Cornell University, College of Arts and Sciences",
+    "description": "Relevant coursework includes Data Structures & Algorithms (Java), Object-Oriented Programming, Programming Fundamentals (Python), Computer System Organization and Programming, C++ Programming, iOS Development (Swift), Discrete Math, and Databases.",
     "tags": [
       "Java",
       "Python",
@@ -57,8 +112,10 @@
       "Swift",
       "Data Structures",
       "OOP",
+      "Databases",
       "Higher Education"
-    ]
+    ],
+    "imageUrl": "/images/experiences/cornell_university.png"
   },
   {
     "year": "2023 – 2024",
@@ -70,13 +127,15 @@
       "Cloud",
       "Girls Who Code",
       "Technical Achievement"
-    ]
+    ],
+    "imageUrl": "/images/experiences/tech_achievements.png"
   },
   {
     "year": "2023 – 2024",
     "title": "Battalion Executive Officer",
     "company": "Galena JROTC",
     "description": "Promoted to Executive Officer within nine months of joining the program, selected over officers with four years of tenure. Managed 10 staff officers and coordinated projects impacting 159 cadets. Secured $2,000 for the program through a video campaign and community engagement.",
-    "tags": ["Management", "Project Coordination", "Leadership", "Fundraising"]
+    "tags": ["Management", "Project Coordination", "Leadership", "Fundraising"],
+    "imageUrl": "/images/experiences/galena_jrotc.jpg"
   }
 ]

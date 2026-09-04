@@ -1,74 +1,59 @@
-// src/components/Hero.tsx
 "use client";
 
-import Image from 'next/image'; 
-import Link from 'next/link';
-import config from '@/data/config.json'; 
+import Link from "next/link";
+import { FaGithub, FaBriefcase } from "react-icons/fa6";
+import config from "@/data/config.json";
 
 export default function Hero() {
-  const { fullName, titlePosition, brandStatement, resumePdfPath, resumeDownloadName } = config.siteMetadata;
+  const { fullName, titlePosition1, titlePosition2, brandStatement } =
+    config.siteMetadata;
+  const { githubUrl } = config.contact;
 
   return (
-    <section className="bg-app-background text-app-text py-0 px-4 md:px-8"> 
-      
-      <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left space-y-8 md:space-y-0 md:space-x-12 mt-8 md:mt-16">
-        
-        {/* Profile Image */}
-        <Link 
-          href="/about"
-          className="relative group block"
-        >
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-primary-dark flex-shrink-0 transition-all duration-300 group-hover:border-8">
-            <Image
-              src="/images/profile-pic.jpg" 
-              alt={fullName}
-              width={192} 
-              height={192} 
-              className="object-cover w-full h-full" 
-              priority
+    <section className="bg-app-background text-app-text px-4 md:px-0 min-h-[calc(100vh-6rem)] flex items-center">
+      <div className="w-full flex flex-col md:flex-row items-center text-center md:text-left gap-10 md:gap-16">
+        {/* Headshot — double-frame border like the reference */}
+        <div className="w-64 sm:w-80 md:w-[28rem] h-80 sm:h-[30rem] md:h-[40rem] flex-shrink-0 border-[10px] border-primary p-3 mx-auto md:mx-0 bg-app-background">
+          <div className="w-full h-full border-8 border-primary p-2">
+            <img
+              src="/images/big_headshot1.jpg"
+              alt="Headshot"
+              className="w-full h-full object-cover block"
             />
           </div>
-          {/* Tooltip (Hidden by default, visible on group hover */}
-          <span className="absolute left-1/2 bottom-[-1.5rem] transform -translate-x-1/2 whitespace-nowrap bg-high-contrast-text text-app-background text-xs font-semibold px-2 py-1 rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-300 pointer-events-none z-20">
-            Open About Page
-          </span>
-        </Link>
+        </div>
 
         {/* Text Content */}
-        <div>
-          <h2 className="text-5xl md:text-6xl font-extrabold text-high-contrast-text leading-tight mb-2">
+        <div className="w-full">
+          <h2 className="text-7xl sm:text-5xl md:text-[5.5rem] font-bold text-highlight leading-tight mb-2">
             {fullName}
           </h2>
-          
-          <p className="text-primary text-xl md:text-2xl font-semibold mb-4">
-            {titlePosition}
+
+          <p className="italic font-heading text-high-contrast-text text-lg sm:text-xl md:text-2xl mb-8 leading-snug">
+            {titlePosition1} <br /> {titlePosition2}
           </p>
 
-          <p className="text-secondary-text text-xl mb-8">
+          <p className="text-secondary-text text-base sm:text-lg mb-8 max-w-lg mx-auto md:mx-0 md:ml-auto text-center md:text-right">
             {brandStatement}
           </p>
 
-          {/* Buttons */}
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">     
-            
-            {/* Portfolio Button */}
-            <Link 
-              href="/technical-portfolio" 
-              className="inline-block px-8 py-4 bg-primary-dark text-high-contrast-text font-bold uppercase tracking-wide rounded-lg shadow-lg hover:bg-primary-hover transition-colors duration-300"
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-on-dark italic font-heading text-base rounded-none shadow-sm hover:bg-primary-hover transition-colors flex-1"
             >
-              VIEW TECHNICAL PORTFOLIO
+              <FaGithub className="w-4 h-4" />
+              My GitHub
             </Link>
 
-            {/* Resume Button */}
-            <a 
-              href={resumePdfPath}
-              target="_blank"
-              className="inline-block px-8 py-4 bg-primary-dark text-high-contrast-text font-bold uppercase tracking-wide rounded-lg shadow-lg hover:bg-primary-hover transition-colors duration-300"
-              download={resumeDownloadName} 
-              rel="noopener noreferrer"
+            <Link
+              href="/technical-portfolio"
+              className="inline-flex items-center justify-center px-8 py-4 bg-primary text-on-dark italic font-heading text-base rounded-none shadow-sm hover:bg-primary-hover transition-colors flex-1"
             >
-              DOWNLOAD FULL RESUME (PDF)
-            </a>
+              My Portfolio
+            </Link>
           </div>
         </div>
       </div>

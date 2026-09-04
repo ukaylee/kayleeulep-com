@@ -1,81 +1,74 @@
 @import "tailwindcss";
 
-/* 1. DEFINE CORE COLOR VALUES IN :ROOT (FORCED DEFAULT DARK THEME) */
+/* 1. CORE COLOR VALUES — new sage/olive palette */
 :root {
-  /* Primary/Accent Colors (Red equivalents) */
-  --color-brand-primary-base: #7c2563;       /* Red 500 */
-  --color-brand-primary-dark: #957DAD;       /* Red 600 (Used for most buttons) */
+  --color-brick: #9e3d3d; /* rust/red accent — sparing use (alerts, highlights) */
+  --color-cream: #eff1ed; /* page background */
+  --color-olive: #717744; /* mid olive — labels, links, icons */
+  --color-taupe: #766153; /* warm brown — special/contrast sections */
+  --color-khaki: #bcbd8b; /* light sage — tag chips, borders */
+  --color-deep-olive: #373d20; /* near-black green — headings, dark buttons */
+  --color-sage: #6f8b6f; /* muted sage — secondary text, hover states */
 
-  /* Application Palette */
-  --color-bg-base: #e9dae9;             /* Background (Near Black / Gray-950) */
-  --color-text-base: #2C3E50;           /* Foreground/Text (Gray-200) */
-  --color-card-background-base: #f4f2f6;    /* Gray-800 - For Cards/Panels */
-  --color-accent-background-base: #E0BBE4;  /* Gray-700 - For Buttons/Tags Base */
-  --color-text-secondary: #141515;      /* Secondary Text (Gray-400) */
-  --color-high-contrast-text: #000000;  /* White Text */
-  --color-border-secondary: #b09bb7;    /* Secondary Border (Gray-700) */
-  
-  /* Interaction States */
-  --color-primary-hover-value: #c69aba;       /* Darker Red (Red-700) */
-  /* The dark app background is used for secondary button hover (guarantees contrast) */
-  --color-accent-hover-value: var(--color-bg-base); 
+  --color-card-background-base: #ffffff;
 }
 
-/* 2. DEFINE THEME UTILITIES using @theme */
+/* 2. THEME UTILITIES */
 @theme {
-  --color-*: initial; 
-  
-  /* Primary Brand Colors */
-  --color-primary: var(--color-brand-primary-base); 
-  --color-primary-dark: var(--color-brand-primary-dark); 
-  
-  /* Interaction States */
-  --color-primary-hover: var(--color-primary-hover-value);
-  --color-accent-hover: var(--color-accent-hover-value); /* New, clear hover utility */
+  --color-*: initial;
 
-  /* Application Background/Text Palette */
-  --color-app-background: var(--color-bg-base); 
-  --color-app-text: var(--color-text-base); 
-  
-  --color-card-background: var(--color-card-background-base); /* Used on all main cards */
-  --color-accent-background: var(--color-accent-background-base); /* Used on tags and secondary buttons (base color) */
-  
-  --color-secondary-text: var(--color-text-secondary);
-  --color-high-contrast-text: var(--color-high-contrast-text);
-  --color-border-secondary: var(--color-border-secondary);
+  /* Brand */
+  --color-primary: var(--color-olive);
+  --color-primary-dark: var(--color-deep-olive);
+  --color-primary-hover: var(--color-sage);
+  --color-accent-hover: var(--color-cream);
 
-  /* Font Namespace */
-  --font-inter: Inter, sans-serif;
-  --font-sans: var(--font-inter); 
-  --font-heading: var(--font-emilys-candy);
+  /* Page */
+  --color-app-background: var(--color-cream);
+  --color-app-text: var(--color-deep-olive);
+
+  --color-card-background: var(--color-card-background-base);
+  --color-accent-background: var(--color-khaki);
+
+  --color-secondary-text: var(--color-sage);
+  --color-border-secondary: var(--color-khaki);
+
+  /* Headings — dark, meant for light backgrounds */
+  --color-high-contrast-text: var(--color-deep-olive);
+  /* Button/label text on dark backgrounds — new token */
+  --color-on-dark: var(--color-cream);
+
+  /* Reserved accent for CTAs like "actively seeking..." */
+  --color-highlight: var(--color-brick);
+  /* Warm contrast section (e.g. AI Philosophy block) */
+  --color-tertiary: var(--color-taupe);
+
+  /* Fonts */
+  --font-sans: var(--font-tenor-sans);
+  --font-heading: var(--font-playfair);
 }
 
 /* 3. Global Heading Application */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-heading) !important;
-  /* !important used here to ensure the custom CSS variable overrides any default 
-  font-family set by Tailwind's base styles */
 }
 
 /* 4. Special Effects */
 @layer components {
-/* 🛑 NEW: Custom Hover Logic for SVG Fill 🛑 */
   .svg-wobbly-fill {
-    /* Ensure the color change is smooth */
-    transition: fill 300ms ease; 
+    transition: fill 300ms ease;
   }
-
-  /* Target the SVG fill path when its parent div (the group) is hovered */
   .group:hover .svg-wobbly-fill {
-    /* Use the theme variable for the desired hover color */
-    fill: var(--color-accent-background-base); 
-  } 
+    fill: var(--color-khaki);
+  }
 }
 
-/* CRITICAL FIX: Forced Margin Reset */
 html,
 body {
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden; 
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden;
 }

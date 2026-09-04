@@ -1,94 +1,106 @@
 // src/app/experience-timeline/page.tsx
 "use client";
 
-import Link from 'next/link';
-import experienceData from '@/data/experience.json'; 
-import config from '@/data/config.json'; 
+import experienceData from "@/data/experience.json";
+import config from "@/data/config.json";
 
-// Define the structure for an individual timeline event
 interface TimelineEvent {
   year: string;
   title: string;
   company: string;
   description: string;
-  tags: string[];
+  imageUrl: string;
 }
 
 const typedExperienceData: TimelineEvent[] = experienceData as TimelineEvent[];
 
-const TimelineEventCard: React.FC<TimelineEvent> = ({ year, title, company, description, tags }) => (
-  <div className="flex flex-col md:flex-row mb-12 relative">
-    {/* Year / Timeline Dot */}
-    <div className="flex-shrink-0 md:w-1/4 mb-4 md:mb-0 relative">
-      <div className="md:absolute right-0 top-1/2 md:-translate-y-1/2 md:pr-10">
-        <p className="text-primary text-lg font-bold uppercase tracking-wider md:text-right">
+const TimelineEventCard: React.FC<TimelineEvent & { index: number }> = ({
+  year,
+  title,
+  company,
+  description,
+  imageUrl,
+  index,
+}) => {
+  const isImageLeft = index % 2 === 0;
+  const imageOrderClass = isImageLeft ? "md:order-1" : "md:order-2";
+  const contentOrderClass = isImageLeft ? "md:order-2" : "md:order-1";
+
+  return (
+    <div className="relative grid grid-cols-1 md:grid-cols-2 md:gap-x-20 mb-16">
+      {/* Image half: image + year label */}
+      <div
+        className={`${imageOrderClass} flex items-center gap-8 mb-6 md:mb-0 ${
+          isImageLeft ? "md:justify-end" : "md:justify-start"
+        }`}
+      >
+        {/* Square image block with olive shadow peeking out bottom-left */}
+        <div
+          className={`relative flex-shrink-0 w-64 h-64 ${
+            isImageLeft ? "order-1" : "order-2"
+          }`}
+        >
+          <div className="absolute inset-0 bg-primary" />
+          <img
+            src={imageUrl}
+            alt={`${title} at ${company}`}
+            className="absolute inset-0 w-full h-full object-cover block -translate-y-3 translate-x-3"
+          />
+        </div>
+
+        {/* Fixed-width year so it lines up across all rows, same distance from the line on both sides */}
+        <p
+          className={`w-24 flex-shrink-0 text-center text-primary text-sm font-semibold uppercase tracking-wider ${
+            isImageLeft ? "order-2" : "order-1"
+          }`}
+        >
           {year}
         </p>
       </div>
-      {/* Circle/Dot */}
-      <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-3 h-3 bg-primary-dark rounded-full border-2 border-app-background translate-x-[7px] z-10"></div>
-    </div>
 
-    {/* Content Card */}
-    <div className="md:w-3/4 md:pl-10 relative">
-      <div 
-        className="bg-card-background p-6 rounded-xl shadow-md 
-        border border-secondary-background hover:border-primary transition-colors duration-300"
+      {/* Text half: solid olive card */}
+      <div
+        className={`${contentOrderClass} bg-primary text-on-dark p-8 flex flex-col justify-center`}
       >
-        <h3 className="text-2xl font-bold text-high-contrast-text mb-1">{title}</h3>
-        <p className="text-primary font-semibold mb-3">{company}</p>
-        
-        <p className="text-secondary-text mb-4">{description}</p>
-
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2">
-          {tags.map((tag, i) => (
-            // 🛑 FIX: Removed 'border border-primary'
-            <span key={i} className="px-3 py-1 bg-accent-background text-app-text text-xs font-medium rounded-full">
-              {tag}
-            </span>
-          ))}
-        </div>
+        <h3 className="text-3xl font-medium mb-1">{title}</h3>
+        <p className="font-heading italic text-sm mb-4 opacity-90">{company}</p>
+        <p className="leading-relaxed">{description}</p>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
-// --- 2. Main Page Component ---
 export default function ExperienceTimelinePage() {
   const { resumePdfPath, resumeDownloadName } = config.siteMetadata;
-  
+
   return (
     <div className="bg-app-background min-h-screen text-app-text pt-16 pb-24">
-      <main className="container mx-auto max-w-5xl px-4">
-        
+      <main className="container mx-auto max-w-6xl px-4">
         {/* Header Section */}
         <header className="text-center mb-12 pb-8 border-b border-border-secondary">
-          <h1 className="text-5xl font-extrabold text-high-contrast-text mb-2">
+          <h3 className="text-6xl font-heading text-high-contrast-text mb-2">
             My Professional Timeline
-          </h1>
+          </h3>
           <p className="text-secondary-text text-lg">
-            A comprehensive look at my career path, key roles, and major educational milestones.
+            A comprehensive look at my career path, key roles, and major
+            educational milestones.
           </p>
         </header>
 
-        {/* Timeline Container */}
         <section className="relative">
-          {/* Main vertical line for MD screens and up */}
-          <div className="hidden md:block absolute left-1/4 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-border-secondary"></div>
+          <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-border-secondary -translate-x-1/2" />
 
           {typedExperienceData.map((event, index) => (
-            <TimelineEventCard key={index} {...event} />
+            <TimelineEventCard key={index} {...event} index={index} />
           ))}
         </section>
 
-        {/* Final CTA */}
         <div className="mt-16 text-center pt-8 border-t border-border-secondary">
-          <a 
-            href={resumePdfPath} 
+          <a
+            href={resumePdfPath}
             target="_blank"
-            className="inline-block px-8 py-4 bg-primary-dark text-high-contrast-text font-bold uppercase tracking-wide rounded-lg shadow-lg hover:bg-primary-hover transition-colors duration-300 text-xl"
-            download={resumeDownloadName} 
+            className="inline-block px-8 py-4 bg-primary-dark text-on-dark font-bold uppercase tracking-wide rounded-lg shadow-lg hover:bg-primary-hover transition-colors duration-300 text-xl"
+            download={resumeDownloadName}
             rel="noopener noreferrer"
           >
             DOWNLOAD FORMAL RESUME (PDF)

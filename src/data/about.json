@@ -1,10 +1,11 @@
 {
   "header": {
-    "title": "About Kaylee Ulep",
+    "title": "About Me",
     "subtitle": "Cornell Computer Science Student | Building with Integrity and Imagination"
   },
   "intro": {
     "quote": "As a Computer Science student at Cornell, I believe the most impactful technology is built with creativity and integrity. I approach engineering with a <span class='font-bold'>user-first mindset</span>, blending analytical skills with imagination to solve real problems.",
+    "education": "Cornell University, College of Arts and Sciences <br />Bachelor of Arts in Computer Science<br />Expected to Graduate in May 2028",
     "mission": "To build with integrity and imagination to create meaningful impact.",
     "vision": "To develop practical, user-driven technology that solves real-world challenges and adds tangible value."
   },
@@ -13,24 +14,48 @@
     "My core commitment is to the quality and authenticity of the final product. Every line of code, design choice, and written statement is ultimately <span class='font-bold'>owned, reviewed, and validated by me.</span> Leveraging AI to misrepresent my capabilities or experiences is fundamentally opposed to my guiding principles."
   ],
   "principles": [
-    {"term": "Integrity", "definition": "I build ethically and communicate transparently."},
-    {"term": "Reliability", "definition": "I deliver solutions people can trust."},
-    {"term": "Persistence", "definition": "I am committed to solving hard problems."},
-    {"term": "Ownership", "definition": "I see projects through to impact."},
-    {"term": "Purpose", "definition": "I build what matters, not just what works."},
-    {"term": "Communication", "definition": "I prioritize clear and respectful communication."}
+    {
+      "term": "Integrity",
+      "definition": "I build ethically and communicate transparently."
+    },
+    {
+      "term": "Reliability",
+      "definition": "I deliver solutions people can trust."
+    },
+    {
+      "term": "Persistence",
+      "definition": "I am committed to solving hard problems."
+    },
+    { "term": "Ownership", "definition": "I see projects through to impact." },
+    {
+      "term": "Purpose",
+      "definition": "I build what matters, not just what works."
+    },
+    {
+      "term": "Communication",
+      "definition": "I prioritize clear and respectful communication."
+    }
   ],
   "evidence": {
     "story": [
-      "My user-focused approach is best demonstrated by <span class='font-bold'>SkySong</span>, a web application that began as a solution for a real need I identified as a musician. I designed and built an interactive sheet music and audio playback app, making it easier for users to learn harmonies and sing with confidence.",
-      "I reduced chorus members' individual part learning time by <span class='font-bold'>80%</span> after implementing beta-testing feedback from over 20 users, validating the product's high user impact. I took <span class='font-bold'>full ownership</span> of the entire product lifecycle, maintaining the platform, addressing bugs, and prioritizing enhancement requests.",
-      "My roadmap (including features like copyright protection) reflects my commitment to building ethically and anticipating future user needs. This project reinforced my belief that impactful software is born from <span class='font-bold'>persistence, empathy, and a creative spark.</span>"
+      "My user-focused approach shows up across every product I build. It started with <span class='font-bold'>SkySong</span>, an interactive sheet music and audio playback app I designed and built after identifying a real need as a musician, one that reduced chorus members' individual part learning time by <span class='font-bold'>80%</span> after I incorporated feedback from over 20 beta testers. I took <span class='font-bold'>full ownership</span> of the entire product lifecycle, maintaining the platform, addressing bugs, and prioritizing enhancement requests based on what users actually needed.",
+      "That same instinct drives my work today. As an <span class='font-bold'>iOS Developer with Cornell AppDev</span>, I build Uplift in SwiftUI, collaborating with backend and design to ship reliable features. As a <span class='font-bold'>Tech Developer Intern with Sponsors for Educational Opportunity</span>, I led frontend development for MatchMission, a nonprofit platform recognized with SEO's Best Integration and Architecture Award, engineering full-stack features people could actually rely on.",
+      "Across all of it, I keep coming back to the same commitment: building ethically and anticipating what users actually need. I believe impactful software is born from <span class='font-bold'>persistence, empathy, and a creative spark</span>, and that's the thread running through everything here."
     ],
     "technicalSkills": {
       "skills": [
-        {"area": "Languages", "list": "JavaScript (React, Next.js) , Python , Java , C++ , TypeScript , Swift."},
-        {"area": "Web / Databases", "list": "HTML , CSS , Tailwind , MySQL , PostgreSQL , PlanetScale , Supabase."},
-        {"area": "Tools & Practices", "list": "GitHub , VS Code , Xcode , Vercel , Agile Development , Version Control (Git)."}
+        {
+          "area": "Languages",
+          "list": "JavaScript (React, Next.js) , Python , Java , C++ , TypeScript , Swift."
+        },
+        {
+          "area": "Web / Databases",
+          "list": "HTML , CSS , Tailwind , MySQL , PostgreSQL , PlanetScale , Supabase."
+        },
+        {
+          "area": "Tools & Practices",
+          "list": "GitHub , VS Code , Xcode , Vercel , Agile Development , Version Control (Git)."
+        }
       ],
       "explorationAreas": [
         {
